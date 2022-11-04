@@ -1,0 +1,900 @@
+/* GENERELLE REGLER FOR HELE SIDEN */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+h1{
+font-size: 30pt;
+font-family:'Source Serif Pro', serif;
+}
+
+h2{
+font-size:28pt;
+font-family:'Source Serif Pro', serif;
+}
+
+h3{
+font-size: 24pt;
+font-family: 'Source Serif Pro', serif;
+}
+
+h4{
+font-size: 18pt;
+font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+font-family: 'Patrick Hand', cursive;
+font-size:22px;
+font-weight: 300;
+line-height: 35px;
+}
+
+h6{
+font-size: 18pt;
+font-family: 'Montserrat', sans-serif;
+}
+
+p{
+font-size: 16pt;
+font-family: 'Montserrat', sans-serif;
+}
+
+a{
+font-size: 16pt;
+font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+color:white;
+}
+
+
+/* HEADER */
+header{
+  display:flex;
+  flex-direction: row-reverse;
+  padding-top:20px;
+  background-color: #f7ede2; 
+}
+
+header > div{
+  padding-right:20px;
+  display:flex;
+}
+
+#globus{
+padding-right:10px;
+}
+
+
+/* LOGO */
+#logo{
+  background-color: #f7ede2;
+  display:flex;
+  justify-content: center;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+
+/* HERO */
+#hero{
+  background-color: #f7ede2;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+#hero > h4{
+    padding-top:30px;
+}
+
+#hero > p{
+  padding-top:30px;
+  padding-bottom:120px;
+}
+
+
+
+/* SECTION MED ILLUSTRATIONER */
+
+/*Rød Tråd*/
+#redLine {
+fill: none;
+stroke: #c1272d;
+stroke-miterlimit: 10;
+stroke-width: 6px;
+display: inline-block;
+height: 100%;
+}
+
+.line-container {
+position:absolute;
+z-index: -1;
+background-color: #f7ede2;
+padding-left: 190px;
+padding-right: 160px;
+padding-top: 155px;
+padding-bottom: 200px;
+top: 690px;
+left: 0;
+width: 100%;
+height: 300%;
+}
+
+/* SECTION MED ILLUSTRATIONER */
+/* Generelt for sectionen med illustrationer */
+#illustrationer{
+  display:flex;
+  flex-direction: column;
+}
+
+#illustrationer > div{
+  display:flex;
+  flex-direction: row; 
+}
+
+#frivillige > .illustrationstekst{
+  padding-top:150px;
+  padding-left:200px;
+}
+
+#måltider > .illustrationstekst{
+  padding-top:180px;
+  padding-left:280px;
+  padding-right:50px;
+}
+
+#modtagere{
+  padding-left:100px;
+}
+
+#modtagere > .illustrationstekst{
+  padding-top:230px;
+  padding-left:200px;
+}
+
+/*styling på illustrationer hver især*/
+#hænder_illustration{
+  width: 443px;
+  height: 417px;
+}
+
+#taske_illustration{
+  width:427px;
+  height:472px;
+}
+
+#familie_illustration{
+  width:365px;
+}
+
+
+/* SECTION MED DE SYGE FAMILIER */
+/* Generelt for blue box*/
+#blue_box{
+  height:520px;
+  width:100%;
+  background-color: #055596;
+}
+
+/* Generelt for sectionen hvori blue box er */
+#syge_familier{
+ background-color: #f7ede2;
+}
+
+#syge_familier > #blue_box > #tekst_blue_box > h1{
+  padding-left:160px;
+  padding-top:50px;
+  color:white;
+}
+
+#syge_familier > #blue_box > #tekst_blue_box > p{
+  padding-left:160px;
+  padding-right:700px;
+  padding-top:50px;
+  color:white;
+}
+
+/* Billede af modtagerfamilie i blue box */
+#modtager_familie{
+  height:350px;
+  position: absolute;
+  top:2275px;
+  left:57%;
+  border-radius: 15px;
+}
+
+/* Tekst ved siden af gryde */
+#syge_familier > #suppe_tekst1{
+  position: absolute;
+  top: 3100px;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 16pt;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Tekst under ovenstående tekst*/
+#syge_familier > #suppe_tekst2{
+  position: absolute;
+  top: 3380px;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 24pt;
+  font-family:'Source Serif Pro', serif;
+}
+
+
+
+/* SECTIOM MED DE FRIVILIIGES ARBEJDSGANG I DKM */
+/* generelt for video sectionen */
+#DKM_arbejdsgang{
+  background-color:#c23e3e;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:100px;
+}
+
+/* overskrift i sectionen */
+#DKM_arbejdsgang > h1{
+  color:#f7ede2;
+}
+
+/* videoen i sectionen*/
+#arbejdsgang_video{
+  padding-bottom: 50px;
+}
+
+
+/* SECTION MED BREVE FRA MODTAGERE */
+
+#brev_section{
+  background-color:#f7ede2;
+}
+
+#tekst_og_animation{
+  display:flex;
+  padding-top:150px;
+  justify-content:center;
+  text-align: center;
+}
+
+#brev_tekst{
+  padding-right:100px;
+  display:flex;
+}
+
+#brev_animation{
+  background-color:#f7ede2;
+}
+
+.letter-image {
+  margin-left:100px;
+  margin-top:55px;
+  display:flex;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.animated-mail {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.animated-mail .body {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 200px;
+  border-color: transparent transparent #e95f55 transparent;
+  z-index: 2;
+}
+
+.animated-mail .top-fold {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0 100px;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  -moz-transform-origin: 50% 0%;
+  -moz-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  transform-origin: 50% 0%;
+  transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  border-color: #cf4a43 transparent transparent transparent;
+  z-index: 2;
+}
+
+.animated-mail .back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  background: #cf4a43;
+  z-index: 0;
+}
+
+.animated-mail .left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent #e15349;
+  z-index: 2;
+}
+
+.animated-mail .letter {
+  left: 20px;
+  bottom: 0px;
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: 0.4s 0.2s;
+  -moz-transition: 0.4s 0.2s;
+  transition: 0.4s 0.2s;
+}
+
+.animated-mail .letter .letter-border {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 8px, transparent 8px, transparent 18px);
+}
+
+.animated-mail .letter .letter-title {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 40%;
+  background: #cb5a5e;
+}
+
+.animated-mail .letter .letter-context {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 20%;
+  background: #cb5a5e;
+}
+
+.animated-mail .letter .letter-stamp {
+  margin-top: 30px;
+  margin-left: 120px;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background: #cb5a5e;
+  opacity: 0.3;
+}
+
+.shadow {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 400px;
+  height: 30px;
+  transition: 0.4s;
+  transform: translateX(-50%);
+  -webkit-transition: 0.4s;
+  -webkit-transform: translateX(-50%);
+  -moz-transition: 0.4s;
+  -moz-transform: translateX(-50%);
+  border-radius: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.letter-image:hover .animated-mail {
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+}
+.letter-image:hover .animated-mail .top-fold {
+  transition: transform 0.4s, z-index 0.2s;
+  transform: rotateX(180deg);
+  -webkit-transition: transform 0.4s, z-index 0.2s;
+  -webkit-transform: rotateX(180deg);
+  -moz-transition: transform 0.4s, z-index 0.2s;
+  -moz-transform: rotateX(180deg);
+  z-index: 0;
+}
+.letter-image:hover .animated-mail .letter {
+  height: 180px;
+}
+.letter-image:hover .shadow {
+  width: 250px;
+}
+
+
+
+/* SKREVNE BREVE */
+/* generelt for brev sectionen*/
+#breve{
+  background-color: #f7ede2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom:100px;
+}
+
+.testimonial{
+  width: 75%;
+  background-color:white;
+  border-radius: 10px;
+  height: 400px;
+  position: relative;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+/* alle brevtekster */
+.user-text{
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+/* den aktive brevtekst*/
+.user-text.active-text{
+  display: block;
+  animation: moveup 0.5s linear forwards;
+}
+
+.testimonial-pic{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* alle brevikonerne*/
+.user-pic{
+  width: 65px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+/* det aktive brevikon */
+.user-pic.active-pic{
+  width: 100px;
+}
+
+/* transition på brevteksten */
+@keyframes moveup{
+  0%{
+      margin-top: 25px;
+  }
+  100%{
+      margin-top: 0px;
+  }
+}
+
+
+/* GALLERI */
+
+/* generelt for galleri sectionen*/
+#galleri{
+display:flex;
+flex-direction: column;
+align-items: center;
+padding:425px 0px;
+}
+
+#ting_i_ramme{
+position: absolute;
+top:5610px;
+
+}
+
+#ramme_galleri{
+width:100%;
+background-color:#f7ede2;
+position:absolute;
+top:5400px;
+padding-top:150px;
+padding-bottom:550px;
+z-index: -1;
+}
+
+
+/* generelt for billederne*/
+#galleri > #ting_i_ramme > div > img{
+  max-height: 160px;
+  padding:0px 5px;
+  border-radius: 15px;
+  display: none;
+}
+
+/* de  midterste række med to billeder og tekst i midten*/
+#tekst_og_billeder{
+  display: flex;
+  flex-direction: row;
+  padding-top:10px;
+}
+
+#billeder1, #billeder2{
+display:flex;
+justify-content: center;
+}
+
+/* teksten i midten*/
+#tekst_i_midten{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+#tekst_i_midten > #fade_txt> p{
+font-size:12pt;
+}
+
+#tekst_i_midten > #fade_txt > h3{
+font-size:18pt;
+padding-bottom:10px;
+
+}
+
+#galleri_btn{
+text-decoration: none;
+padding-left:30px;
+padding-top:100px;
+border: none;
+cursor: pointer;
+background-color: transparent;
+}
+
+#galleri_btn > img {
+max-width: 250px;
+}
+
+#fade_txt {
+display: none;
+}
+/* Zoom transition på galleri billeder*/
+.zoom {
+transition: transform .1s; 
+}
+
+/* 150% zoom */
+.zoom:hover {
+transform: scale(1.5); 
+}
+
+
+/* SECTION MED DEN KORTE VIDEO */
+
+#kort_video_section{
+display:flex;
+flex-direction: column;
+align-items: center;
+background-color:#c23e3e;
+color:#f7ede2;
+padding: 120px 120px 80px 120px;
+
+}
+
+#kort_video_tekst_og_video{
+display:flex;
+align-items: center;
+padding-top:20px;
+}
+
+#kort_video_tekst{
+padding-right:80px;
+}
+
+
+
+/* SECTION MED FORMULAR */
+
+/* rundt om fomularen*/
+#formular_border{
+background-color:#f7ede2;
+padding-bottom:100px;
+padding-top:100px;
+}
+
+/* Generelt for formular sectionen */
+#formular{
+background-color: #f7ede2;
+padding-top:100px;
+display:flex;
+flex-direction: column;
+align-items: center;
+
+border: 3.5px solid #c23e3e;
+border-radius: 10px;
+margin: 0px 115px;
+}
+
+/* de to kolonner med tekst- og checkboxe */
+#to_kolonner{
+display:flex;
+flex-direction: row;
+padding-top:50px;
+}
+
+#kolonne1, #kolonne2{
+display:flex;
+flex-direction:column;
+}
+
+#kolonne2 > label{
+padding-top:10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 11pt;
+}
+
+#kolonne2 > p{
+padding-bottom:10px;
+}
+
+
+/* textboxe øverst i formularen*/
+input[type=text]{
+width: 65%; 
+padding: 12px; 
+margin-bottom: 50px;
+
+border: 1px solid #ccc;
+border-radius: 10px; 
+background-color:white;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 11pt;
+}
+
+/* textbox nederst i fomularen*/
+#textarea{
+width:83%;
+padding: 12px 0px 110px 12px; 
+margin: 30px 0px; 
+border-radius: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 11pt;
+height:150px;
+color:black;
+}
+
+
+
+
+/* CHECK BOXE */
+
+/* Customize the label (the container) */
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 11pt;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: white;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+background-color:#245a91;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+#checkboxe > p{
+padding-bottom:10px;
+}
+
+
+/* POP UP BESKED EFTER TILMELDING */
+
+.popup_container{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Send knap */
+.btn{
+background-color:#c23e3e;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+margin-bottom:50px;
+}
+
+/* hover på send knap*/
+input[type=submit]:hover {
+background-color:#ccc;
+}
+
+.popup{
+width: 400px; 
+background: #ffff;
+border:1px solid #055596;
+border-radius: 6px;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -50%) scale(0.1);
+text-align: center;
+padding: 0 30px 30px;
+color: #000;
+visibility: hidden;
+transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+ visibility: visible;
+ top: 7575px;
+ transform: translate(-50%, -50%) scale(1);
+}
+
+.popup svg{
+ width: 100px;
+ border-radius: 50%;
+}
+
+.confirm_text{
+ font-size: 38px;
+ font-weight: 500;
+ margin: 30px 0 10px;
+ font-family: 'Source Serif Pro', serif;
+}
+
+.popup button{
+width: 100%;
+margin-top: 50px;
+padding: 10px 0;
+background: #055596;
+color: #ffff;
+border: 0;
+outline: none;
+font-size: 18px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+
+/* FOOTER */
+footer{
+  width:100%;
+  background-color:#c23e3e;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color:white;
+  padding-left:80px;
+}
+
+#charlotte{
+  width:50%;
+  display:flex;
+}
+
+footer > #footer_tekst > h6{
+  padding-top:35px;
+  padding-bottom:10px;
+}
+
+footer > #footer_tekst > p{
+  padding-bottom:10px;
+}
+
+/* PFA logo */
+footer > #PFA{
+  position: absolute;
+  top: 8250px;
+  left: 53%;
+  transform: translate(-50%, -50%);
+}
+
+footer > #footer_tekst > a{
+  padding-right:15px;
+}
+
+/*filled heart*/
+#filled_heart{
+position: fixed;
+bottom: 0px;
+right: 20px;
+}
+
+
+
+/* ERROR 404 - PAGE NOT FOUND */
+#errorbody {
+background-color: #f7ede2;
+}
+
+.error_section{
+  display:flex;
+  flex-direction: column;
+}
+
+#errorbillede{
+    display: flex;
+    justify-content: center;
+}
+
+.errortekst{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size:16pt;
+}
